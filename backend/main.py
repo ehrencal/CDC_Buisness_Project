@@ -1,5 +1,5 @@
 from statsmodels.tsa.arima.model import ARIMA
-from flask import Flask, render_template, jsonify
+from flask import Flask, jsonify, request
 from flask_cors import CORS
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -21,9 +21,10 @@ def home():
 
 @app.route('/forecast')
 def forcastYears():
+    column = request.args.get('column', default="Space economy", type=str)
     plots = []
     for i in range(1, 11):
-        plots.append(forcastRoute(column="Space economy",length=i))
+        plots.append(forcastRoute(column=column,length=i))
     return jsonify(plots)
 
 @app.route('/getColumns')

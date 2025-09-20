@@ -35,6 +35,15 @@ const App = () => {
       .catch(error => console.error("Error fetching columns:", error));
   }, []);
 
+  const handleDropdownChange = (event) => {
+    const selectedColumn = event.target.value;
+    // Fetch new forecast data based on selected column
+    fetch(`http://localhost:5000/forecast?column=${encodeURIComponent(selectedColumn)}`)
+      .then(response => response.json())
+      .then(data => setForecastData(data))
+      .catch(error => console.error("Error fetching data:", error));
+  }
+
   return (
     <div className="app">
       {/* Left side (Graph + Predict) */}
@@ -52,7 +61,10 @@ const App = () => {
       {/* Right side (Dropdown + Blob) */}
       <div className="right">
         {/* Dropdown */}
-        <select className="dropdown">
+        <select 
+          className="dropdown"
+          onChange={(e) => handleDropdownChange(e)}
+        >
           {columns.map((col, index) => (
             <option key={index} value={col}>{col.trim()}</option>
           ))}
