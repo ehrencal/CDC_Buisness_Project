@@ -28,7 +28,7 @@ def forcastYears():
 
 @app.route('/getColumns')
 def getColumns():
-    return jsonify(dataframes.real_output_df.columns.tolist())
+    return jsonify(dataframes.real_output_df.columns.str.strip().tolist())
 
 def forcastRoute(column, length):
     return forcasts.forecast(dataframes.real_output_df, column, length, (6,1,1))
