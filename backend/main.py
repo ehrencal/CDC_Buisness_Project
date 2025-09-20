@@ -22,11 +22,11 @@ def home():
 def forcastYears():
     plots = []
     for i in range(1, 11):
-        plots.append(forcastRoute(column="Space economy1",length=i))
+        plots.append(forcastRoute(column="Space economy",length=i))
     return jsonify(plots)
 
 def forcastRoute(column, length):
-    return forcasts.forecast(dataframes.real_output_df, column, length, (5,1,1))
+    return forcasts.forecast(dataframes.real_output_df, column, length, (6,1,1))
 
 if __name__ == '__main__':
     app.run(debug=True)

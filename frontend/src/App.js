@@ -4,7 +4,7 @@ import PredictInput from "./components/PredictInput.js";
 import Graphs from "./components/Graphs.js";
 
 const App = () => {
-  const [graphNumber, setGraphNumber] = useState(1);
+  const [graphNumber, setGraphNumber] = useState(2);
   const [forecastData, setForecastData] = useState(null);
 
   const parseForecastImage = (data, altText = "Forecast Plot") => {
