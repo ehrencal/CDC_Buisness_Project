@@ -35,6 +35,11 @@ const App = () => {
       .then(response => response.json())
       .then(data => setColumns(data))
       .catch(error => console.error("Error fetching columns:", error));
+
+    fetch("/imformation.json")
+      .then(response => response.json())
+      .then(data => setInformation(data))
+      .catch(error => console.error("Error fetching information:", error));
   }, []);
 
   const handleDropdownChange = (event) => {
