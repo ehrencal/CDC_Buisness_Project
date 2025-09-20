@@ -1,17 +1,44 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import PredictInput from "./components/PredictInput.js";
 import Graphs from "./components/Graphs.js";
 
 const App = () => {
-  const [graphNumber, setGraphNumber] = useState(0);
+  const [graphNumber, setGraphNumber] = useState(1);
+  const [forecastData, setForecastData] = useState(null);
+
+  const parseForecastImage = (data, altText = "Forecast Plot") => {
+    if (!data || !data.plot_base64) {
+      return <p>No image available.</p>;
+    }
+
+    return (
+      <img
+        src={`data:image/png;base64,${data.plot_base64}`}
+        alt={altText}
+        style={{ maxWidth: "100%", border: "1px solid #ccc", borderRadius: "8px" }}
+      />
+    );
+  }
+
+
+  useEffect(() => {
+    fetch("http://localhost:5000/forecast")
+      .then(response => response.json())
+      .then(data => setForecastData(data))
+      .catch(error => console.error("Error fetching data:", error));
+  }, []);
 
   return (
     <div className="app">
       {/* Left side (Graph + Predict) */}
       <div className="left">
-        <Graphs 
-          graphNumber={graphNumber}
+        <Graphs
+          forecastImage={
+            Array.isArray(forecastData) && forecastData.length > graphNumber
+              ? parseForecastImage(forecastData[graphNumber])
+              : <p>Loading...</p>
+          }
         />
         <PredictInput 
           setGraphNumber={setGraphNumber}

@@ -3,7 +3,7 @@ import "../App.css";
 
 /* Predict + Input */
 const PredictInput = ({ setGraphNumber }) => {
-    const [predictValue, setPredictValue] = useState(0);
+    const [predictValue, setPredictValue] = useState(1);
 
     const handleSliderChange = (event) => {
         setPredictValue(event.target.value);
@@ -15,8 +15,8 @@ const PredictInput = ({ setGraphNumber }) => {
             <label className="predict-btn">{predictValue}</label>
             <input
             type="range"
-            min="0"
-            max="11"
+            min="1"
+            max="10"
             step="1"
             value={predictValue}
             className="input-box"
