@@ -9,7 +9,7 @@ import io
 import base64
 import forcasts
 import dataframes
-from waitress import serve
+#from waitress import serve
 
 app = Flask(__name__)
 CORS(app)
@@ -28,7 +28,7 @@ def forcastYears():
 
 @app.route('/getColumns')
 def getColumns():
-    return jsonify(dataframes.real_output_df.columns.str.strip().tolist())
+    return jsonify(dataframes.real_output_df.columns.tolist()[1:])
 
 def forcastRoute(column, length):
     return forcasts.forecast(dataframes.real_output_df, column, length, (6,1,1))
