@@ -1,0 +1,71 @@
+Industry,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023
+                    Housing,,,,,,,,,,,,
+                    Other real estate,,,,,,,,,,,,
+                Accommodation,,,,,,,,,,,,
+                Administrative and support services,,inf,0.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+                Ambulatory health care services,,,,,,,,,,,,
+"                Amusements, gambling, and recreation industries",,,,,,,,,,,,
+                Apparel and leather and allied products,,,,,,,,,,,,
+                Chemical products,,,,,,,,,,,,
+                Computer systems design and related services,,-25.0,0.0,33.33333333333333,0.0,25.0,-19.999999999999996,0.0,0.0,25.0,0.0,-19.999999999999996
+"                Electrical equipment, appliances, and components",,0.0,0.0,-33.333333333333336,50.0,-33.333333333333336,50.0,-33.333333333333336,0.0,0.0,0.0,0.0
+                Fabricated metal products,,100.0,0.0,0.0,0.0,0.0,-50.0,0.0,0.0,0.0,0.0,0.0
+"                Federal Reserve banks, credit intermediation, and related activities",,,,,,,,,,,,
+                Food and beverage and tobacco products,,0.0,0.0,-100.0,,,,,,,,
+                Food services and drinking places,,,,,,,,,,,,
+"                Funds, trusts, and other financial vehicles",,,,,,,,,,,,
+                Furniture and related products,,,,,,,,,,,,
+                Hospitals,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-100.0,inf,100.0,-50.0
+                Insurance carriers and related activities,,0.0,-100.0,inf,0.0,-100.0,,,,,inf,0.0
+                Legal services,,,,,,,,,,,,
+                Machinery,,0.0,0.0,-50.0,0.0,0.0,0.0,0.0,0.0,0.0,50.0,0.0
+                Miscellaneous manufacturing,,33.33333333333333,-25.0,-33.333333333333336,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+"                Motor vehicles, bodies and trailers, and parts",,,,,,,,,,,,
+                Nonmetallic mineral products,,,,,,,,,,,,
+                Nursing and residential care facilities,,,,,,,,,,,,
+                Paper products,,,,,,,,,,,,
+"                Performing arts, spectator sports, museums, and related activities",,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+                Petroleum and coal products,,,,,,,,,,,,
+                Plastics and rubber products,,0.0,0.0,-100.0,,,,,,,,
+                Primary metals,,,,,,,,,,,,
+                Printing and related support activities,,,,,,,,,,,,
+                Real estate,,,,,,,,,,,,
+                Rental and leasing services and lessors of intangible assets,,,,,,,,,,,,
+"                Securities, commodity contracts, and investments",,,,,,,,,,,,
+                Social assistance,,,,,,,,,,,,
+                Textile mills and textile product mills,,,,,,,,,,,,
+                Waste management and remediation services,,,,,,,,,,,,
+                Wood products,,,,,,,,,,,,
+            Accommodation and food services,,,,,,,,,,,,
+            Administrative and waste management services,,inf,0.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+            Air transportation,,0.0,-50.0,0.0,0.0,0.0,100.0,-50.0,0.0,0.0,100.0,0.0
+"            Arts, entertainment, and recreation",,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+"            Data processing, internet publishing, and other information services",,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+            Finance and insurance,,0.0,-100.0,inf,0.0,0.0,-100.0,,,,inf,0.0
+            Food and beverage stores,,,,,,,,,,,,
+            General merchandise stores,,inf,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+            Health care and social assistance,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-100.0,inf,100.0,-50.0
+            Management of companies and enterprises,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+"            Mining, except oil and gas",,,,,,,,,,,,
+            Motion picture and sound recording industries,,,,,,,,,,,,
+            Motor vehicle and parts dealers,,,,,,,,,,,,
+            Nondurable goods,,0.0,0.0,-50.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+            Oil and gas extraction,,,,,,,,,,,,
+            Other retail,,0.0,0.0,33.33333333333333,25.0,-19.999999999999996,25.0,19.999999999999996,-33.333333333333336,25.0,0.0,0.0
+            Other transportation and support activities,,,,,,,,,,,,
+            Pipeline transportation,,,,,,,,,,,,
+"            Publishing industries, except internet (includes software)",,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-100.0,inf,0.0,0.0
+            Rail transportation,,,,,,,,,,,,
+            Real estate and rental and leasing,,,,,,,,,,,,
+            Support activities for mining,,,,,,,,,,,,
+            Transit and ground passenger transportation,,,,,,,,,,,,
+            Truck transportation,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,33.33333333333333,-25.0
+            Warehousing and storage,,,,,,,,,,,,
+            Water transportation,,,,,,,,,,,,
+"        Arts, entertainment, recreation, accommodation, and food services",,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+        Construction,,0.0,0.0,0.0,0.0,100.0,-50.0,100.0,0.0,0.0,50.0,-33.333333333333336
+"        Finance, insurance, real estate, rental, and leasing",,0.0,-100.0,inf,0.0,0.0,-100.0,,,,inf,0.0
+        Mining,,,,,,,,,,,,
+"        Other services, except government",,,,,,,,,,,,
+        Retail trade,,33.33333333333333,0.0,0.0,50.0,-16.666666666666664,19.999999999999996,16.666666666666675,-28.57142857142857,19.999999999999996,0.0,0.0
+        Utilities,,,,,,,,,,,,

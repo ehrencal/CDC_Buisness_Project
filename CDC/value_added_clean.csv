@@ -1,0 +1,110 @@
+Industry,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023
+Space economy1,,,,,,,,,,,,
+    Private industries,,,,,,,,,,,,
+"        Agriculture, forestry, fishing, and hunting",,,,,,,,,,,,
+            Farms,,,,,,,,,,,,
+"            Forestry, fishing, and related activities",,,,,,,,,,,,
+        Mining,53.0,41.0,51.0,45.0,26.0,10.0,4.0,5.0,2.0,2.0,2.0,2.0
+            Oil and gas extraction,39.0,30.0,38.0,32.0,18.0,6.0,3.0,3.0,1.0,1.0,1.0,1.0
+"            Mining, except oil and gas",0.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+            Support activities for mining,14.0,10.0,13.0,12.0,7.0,3.0,1.0,1.0,1.0,1.0,1.0,1.0
+        Utilities,1.0,1.0,1.0,2.0,2.0,2.0,2.0,1.0,1.0,2.0,2.0,1.0
+        Construction,265.0,239.0,346.0,406.0,403.0,585.0,360.0,,850.0,513.0,632.0,646.0
+        Manufacturing,,,,,,,,,,,,
+            Durable goods,,,,,,,,,,,,
+                Wood products,21.0,12.0,19.0,5.0,5.0,4.0,5.0,3.0,3.0,7.0,5.0,5.0
+                Nonmetallic mineral products,53.0,63.0,66.0,27.0,29.0,27.0,27.0,25.0,23.0,23.0,25.0,25.0
+                Primary metals,50.0,53.0,82.0,68.0,49.0,45.0,32.0,28.0,30.0,24.0,30.0,30.0
+                Fabricated metal products,260.0,443.0,324.0,363.0,323.0,266.0,180.0,168.0,163.0,204.0,218.0,217.0
+                Machinery,822.0,789.0,725.0,431.0,433.0,402.0,410.0,379.0,346.0,407.0,455.0,450.0
+                Computer and electronic products2,,,,,,,,,,,,
+"                Electrical equipment, appliances, and components",612.0,775.0,793.0,686.0,721.0,622.0,638.0,554.0,464.0,390.0,417.0,413.0
+"                Motor vehicles, bodies and trailers, and parts",2.0,2.0,2.0,2.0,2.0,2.0,1.0,1.0,1.0,1.0,2.0,1.0
+                Other transportation equipment3,,,,,,,,,,,,
+                Furniture and related products,17.0,22.0,20.0,11.0,9.0,10.0,9.0,8.0,8.0,7.0,8.0,8.0
+                Miscellaneous manufacturing,577.0,774.0,699.0,344.0,361.0,363.0,375.0,340.0,294.0,354.0,443.0,438.0
+            Nondurable goods,420.0,497.0,478.0,206.0,242.0,218.0,215.0,172.0,161.0,178.0,221.0,218.0
+                Food and beverage and tobacco products,224.0,306.0,306.0,132.0,135.0,118.0,115.0,86.0,91.0,99.0,130.0,129.0
+                Textile mills and textile product mills,8.0,13.0,11.0,6.0,10.0,7.0,7.0,5.0,4.0,5.0,6.0,6.0
+                Apparel and leather and allied products,2.0,6.0,6.0,3.0,5.0,4.0,4.0,3.0,2.0,3.0,4.0,4.0
+                Paper products,10.0,36.0,27.0,14.0,17.0,24.0,17.0,16.0,12.0,16.0,16.0,16.0
+                Printing and related support activities,2.0,2.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+                Petroleum and coal products,45.0,14.0,13.0,5.0,9.0,7.0,27.0,22.0,19.0,16.0,16.0,16.0
+                Chemical products,10.0,4.0,5.0,6.0,6.0,6.0,7.0,7.0,7.0,10.0,12.0,11.0
+                Plastics and rubber products,105.0,130.0,118.0,39.0,59.0,52.0,37.0,32.0,26.0,31.0,39.0,38.0
+        Wholesale trade,,,,,,,,,,,,
+        Retail trade,219.0,245.0,259.0,331.0,478.0,379.0,442.0,667.0,406.0,570.0,602.0,631.0
+            Motor vehicle and parts dealers,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,1.0,1.0,1.0,1.0
+            Food and beverage stores,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+            General merchandise stores,23.0,28.0,29.0,33.0,46.0,42.0,50.0,68.0,52.0,67.0,57.0,58.0
+            Other retail,195.0,216.0,229.0,297.0,430.0,335.0,390.0,599.0,352.0,500.0,545.0,574.0
+        Transportation and warehousing,909.0,821.0,727.0,703.0,743.0,729.0,859.0,691.0,641.0,627.0,915.0,925.0
+            Air transportation,477.0,402.0,314.0,329.0,344.0,291.0,425.0,254.0,199.0,184.0,572.0,624.0
+            Rail transportation,2.0,1.0,1.0,1.0,3.0,3.0,3.0,3.0,3.0,3.0,4.0,3.0
+            Water transportation,1.0,1.0,1.0,1.0,1.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0
+            Truck transportation,398.0,397.0,399.0,361.0,370.0,416.0,418.0,391.0,401.0,408.0,406.0,380.0
+            Transit and ground passenger transportation,1.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0
+            Pipeline transportation,0.0,0.0,0.0,0.0,1.0,2.0,1.0,2.0,1.0,1.0,1.0,1.0
+            Other transportation and support activities,22.0,14.0,8.0,7.0,20.0,13.0,11.0,33.0,28.0,17.0,18.0,19.0
+            Warehousing and storage,4.0,3.0,3.0,2.0,3.0,4.0,4.0,4.0,2.0,3.0,3.0,3.0
+        Information,,,,,,,,,,,,
+"            Publishing industries, except internet (includes software)",305.0,281.0,251.0,412.0,359.0,285.0,214.0,237.0,243.0,270.0,306.0,374.0
+            Motion picture and sound recording industries,40.0,43.0,41.0,40.0,38.0,43.0,38.0,45.0,34.0,34.0,38.0,44.0
+            Broadcasting and telecommunications4,,,,,,,,,,,,
+"            Data processing, internet publishing, and other information services",347.0,724.0,706.0,850.0,936.0,950.0,884.0,941.0,862.0,870.0,917.0,922.0
+"        Finance, insurance, real estate, rental, and leasing",242.0,145.0,131.0,209.0,255.0,220.0,154.0,133.0,97.0,112.0,183.0,178.0
+            Finance and insurance,241.0,143.0,129.0,205.0,249.0,214.0,149.0,126.0,89.0,104.0,175.0,170.0
+"                Federal Reserve banks, credit intermediation, and related activities",12.0,11.0,10.0,18.0,28.0,28.0,19.0,18.0,17.0,27.0,26.0,26.0
+"                Securities, commodity contracts, and investments",5.0,6.0,7.0,8.0,12.0,40.0,9.0,9.0,10.0,12.0,12.0,14.0
+                Insurance carriers and related activities,224.0,126.0,112.0,178.0,208.0,145.0,120.0,99.0,62.0,66.0,136.0,130.0
+"                Funds, trusts, and other financial vehicles",0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+            Real estate and rental and leasing,1.0,2.0,2.0,3.0,5.0,6.0,6.0,7.0,9.0,8.0,8.0,8.0
+                Real estate,0.0,1.0,1.0,2.0,3.0,3.0,3.0,4.0,6.0,5.0,5.0,5.0
+                    Housing,0.0,0.0,0.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+                    Other real estate,0.0,1.0,1.0,1.0,2.0,3.0,3.0,3.0,5.0,4.0,4.0,4.0
+                Rental and leasing services and lessors of intangible assets,1.0,1.0,1.0,2.0,2.0,3.0,2.0,3.0,3.0,3.0,3.0,3.0
+        Professional and business services,,,,,,,,,,,,
+"            Professional, scientific, and technical services",,,,,,,,,,,,
+                Legal services,1.0,1.0,1.0,1.0,2.0,2.0,1.0,1.0,1.0,2.0,2.0,2.0
+                Computer systems design and related services,494.0,354.0,395.0,490.0,513.0,730.0,613.0,675.0,701.0,963.0,,
+"                Miscellaneous professional, scientific, and technical services",,,,,,,,,,,,
+            Management of companies and enterprises,169.0,177.0,122.0,155.0,242.0,191.0,154.0,172.0,146.0,146.0,154.0,172.0
+            Administrative and waste management services,20.0,39.0,57.0,77.0,98.0,109.0,99.0,101.0,97.0,106.0,130.0,145.0
+                Administrative and support services,20.0,39.0,57.0,77.0,98.0,109.0,99.0,101.0,97.0,106.0,130.0,145.0
+                Waste management and remediation services,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+"        Educational services, health care, and social assistance",,,,,,,,,,,,
+            Educational services,,,,,,,,,,,,
+            Health care and social assistance,78.0,78.0,64.0,74.0,79.0,82.0,87.0,72.0,38.0,81.0,230.0,84.0
+                Ambulatory health care services,2.0,2.0,2.0,2.0,4.0,4.0,3.0,4.0,3.0,4.0,4.0,4.0
+                Hospitals,76.0,76.0,62.0,71.0,75.0,78.0,83.0,68.0,35.0,76.0,224.0,80.0
+                Nursing and residential care facilities,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+                Social assistance,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+"        Arts, entertainment, recreation, accommodation, and food services",82.0,89.0,98.0,86.0,97.0,102.0,106.0,106.0,108.0,87.0,79.0,94.0
+"            Arts, entertainment, and recreation",79.0,85.0,94.0,82.0,94.0,99.0,103.0,103.0,106.0,84.0,76.0,89.0
+"                Performing arts, spectator sports, museums, and related activities",79.0,85.0,93.0,82.0,93.0,99.0,102.0,103.0,106.0,84.0,75.0,89.0
+"                Amusements, gambling, and recreation industries",0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+            Accommodation and food services,3.0,4.0,4.0,4.0,3.0,3.0,3.0,3.0,2.0,2.0,3.0,5.0
+                Accommodation,3.0,4.0,4.0,4.0,3.0,3.0,3.0,3.0,2.0,2.0,3.0,5.0
+                Food services and drinking places,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+"        Other services, except government",3.0,4.0,4.0,4.0,5.0,5.0,4.0,5.0,5.0,6.0,7.0,6.0
+    Government5,,,,,,,,,,,,
+        Federal,,,,,,,,,,,,
+            General government,,,,,,,,,,,,
+                National defense,,,,,,,,,,,,
+                Nondefense,,,,,,,,,,,,
+            Government enterprises,3.0,3.0,2.0,2.0,3.0,3.0,3.0,3.0,3.0,10.0,3.0,3.0
+        State and local,,,,,,,,,,,,
+            General government,,,,,,,,,,,,
+            Government enterprises,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Addendum:,,,,,,,,,,,,
+"Space economy excluding satellite television, satellite radio, and educational services6",,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
