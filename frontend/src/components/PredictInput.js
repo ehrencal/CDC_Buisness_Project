@@ -15,7 +15,7 @@ const PredictInput = ({ setGraphNumber }) => {
             <label className="predict-btn">{predictValue}</label>
             <input
             type="range"
-            min="2"
+            min="1"
             max="9"
             step="1"
             value={predictValue}
