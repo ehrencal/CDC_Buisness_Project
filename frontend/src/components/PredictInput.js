@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import "../App.css";
 
 /* Predict + Input */
-function PredictInput() {
+const PredictInput = ({ setGraphNumber }) => {
     const [predictValue, setPredictValue] = useState(0);
 
     const handleSliderChange = (event) => {
         setPredictValue(event.target.value);
+        setGraphNumber(event.target.value);
     };
 
     return (

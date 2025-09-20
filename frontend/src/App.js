@@ -1,18 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import PredictInput from "./components/PredictInput.js";
+import Graphs from "./components/Graphs.js";
 
-function App() {
+const App = () => {
+  const [graphNumber, setGraphNumber] = useState(0);
+
   return (
     <div className="app">
       {/* Left side (Graph + Predict) */}
       <div className="left">
-        {/* Graph/Image */}
-        <div className="graph">
-          <span className="graph-text">Graph / Image</span>
-        </div>
-
-        <PredictInput />
+        <Graphs 
+          graphNumber={graphNumber}
+        />
+        <PredictInput 
+          setGraphNumber={setGraphNumber}
+        />
       </div>
 
       {/* Right side (Dropdown + Blob) */}
