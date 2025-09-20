@@ -1,1 +1,1 @@
-# CDC_Buisness_Project
+# CDC_Business_Project
