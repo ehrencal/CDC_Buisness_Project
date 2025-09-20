@@ -12,7 +12,7 @@ const PredictInput = ({ setGraphNumber }) => {
 
     return (
         <div className="predict-input">
-            <label className="predict-btn">{predictValue+1}</label>
+            <label className="predict-btn">{parseInt(predictValue)+1}</label>
             <input
             type="range"
             min="1"
