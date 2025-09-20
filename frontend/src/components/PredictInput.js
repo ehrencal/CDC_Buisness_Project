@@ -16,7 +16,7 @@ const PredictInput = ({ setGraphNumber }) => {
             <input
             type="range"
             min="1"
-            max="9"
+            max="7"
             step="1"
             value={predictValue}
             className="input-box"
