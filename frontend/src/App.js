@@ -8,7 +8,7 @@ const App = () => {
   const [graphNumber, setGraphNumber] = useState(1);
   const [forecastData, setForecastData] = useState(null);
   const [columns, setColumns] = useState([]);
-  const [info, setInfo] = useState(information["Space economy"])
+  const [info, setInfo] = useState("The 'Space economy' column reports the real gross output for the overall space-related sector. This includes all industries and activities that contribute to space exploration, satellite services, and supporting technologies. Values are reported in millions of chained 2017 dollars.");
 
   const parseForecastImage = (data, altText = "Forecast Plot") => {
     if (!data || !data.plot_base64) {
@@ -39,7 +39,7 @@ const App = () => {
 
   const handleDropdownChange = (event) => {
     const selectedColumn = event.target.value;
-    setInfo(information[selectedColumn] || "No information available for this selection.");
+    setInfo(information[selectedColumn.trim()] || "No information available for this selection.");
     // Fetch new forecast data based on selected column
     fetch(`http://localhost:5000/forecast?column=${encodeURIComponent(selectedColumn)}`)
       .then(response => response.json())
