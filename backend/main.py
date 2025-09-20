@@ -1,5 +1,6 @@
 from statsmodels.tsa.arima.model import ARIMA
 from flask import Flask, render_template, jsonify
+from flask_cors import CORS
 import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib import use
@@ -10,6 +11,7 @@ import forcasts
 import dataframes
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/')
 def home():
