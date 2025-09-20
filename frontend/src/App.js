@@ -21,6 +21,14 @@ const App = () => {
     );
   }
 
+  const getColumns = () => {
+    let return_data;
+    fetch("http://localhost:5000/getColumns")
+      .then(response => response.json())
+      .then(data => return_data = data)
+      .catch(error => console.error("Error fetching columns:", error));
+    return return_data;
+  }
 
   useEffect(() => {
     fetch("http://localhost:5000/forecast")
@@ -49,9 +57,9 @@ const App = () => {
       <div className="right">
         {/* Dropdown */}
         <select className="dropdown">
-          <option>ARIMA Forecast</option>
-          <option>Option 2</option>
-          <option>Option 3</option>
+          {getColumns() && getColumns().map((col, index) => (
+            <option key={index} value={col}>{col}</option>
+          ))}
         </select>
 
         {/* Blob Box */}
