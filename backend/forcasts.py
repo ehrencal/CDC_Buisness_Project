@@ -44,7 +44,7 @@ def forecast(df, column_name, forecast_steps=5, arima_order=(1, 1, 1)):
     plt.grid(True)
     plt.xlabel("Time (Years)")
     plt.ylabel("Millions of Dollars")
-    plt.xticks(ticks=range(len(full_forecast)), labels=range(2012, 2023 + len(full_forecast)))
+    plt.xticks(ticks=range((2023-2012)+len(full_forecast)), labels=range(2012, 2023 + len(full_forecast)))
     
 
     # 6. Save plot as base64
