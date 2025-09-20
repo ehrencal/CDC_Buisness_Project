@@ -2,6 +2,8 @@ from statsmodels.tsa.arima.model import ARIMA
 from flask import Flask, render_template, jsonify
 import pandas as pd
 import matplotlib.pyplot as plt
+from matplotlib import use
+use('Agg')  
 import io
 import base64
 import forcasts
@@ -17,9 +19,9 @@ def home():
 @app.route('/forecast')
 def forcastYears():
     plots = []
-    for i in range(11):
+    for i in range(1, 11):
         plots.append(forcastRoute(column="Space economy1",length=i))
-    return plots
+    return jsonify(plots)
 
 def forcastRoute(column, length):
     return forcasts.forecast(dataframes.real_output_df, column, length, (5,1,1))

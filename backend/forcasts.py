@@ -22,7 +22,7 @@ def forecast(df, column_name, forecast_steps=5, arima_order=(1, 1, 1)):
     """
     # 1. Ensure the column exists and is numeric
     if column_name not in df.columns:
-        return jsonify({"error": f"Column '{column_name}' not found in DataFrame."}), 400
+        return {"error": f"Column '{column_name}' not found in DataFrame."}
     series = pd.to_numeric(df[column_name], errors='coerce').dropna()
 
     # 2. Fit ARIMA model
