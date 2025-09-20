@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import PredictInput from "./components/PredictInput.js";
 import Graphs from "./components/Graphs.js";
+import information from "./imformation.json";
 
 const App = () => {
-  const info = require("./imformation.json");
   const [graphNumber, setGraphNumber] = useState(1);
   const [forecastData, setForecastData] = useState(null);
   const [columns, setColumns] = useState([]);
-  const [information, setInformation] = useState("This column represents the year of observation. Each row corresponds to a calendar year and provides real gross output values for the different industries and sectors listed in the dataset. The values in this column establish the time series structure of the dataset.");
+  const [info, setInfo] = useState(information["Space economy"])
 
   const parseForecastImage = (data, altText = "Forecast Plot") => {
     if (!data || !data.plot_base64) {
@@ -35,16 +35,11 @@ const App = () => {
       .then(response => response.json())
       .then(data => setColumns(data))
       .catch(error => console.error("Error fetching columns:", error));
-
-    fetch("/imformation.json")
-      .then(response => response.json())
-      .then(data => setInformation(data))
-      .catch(error => console.error("Error fetching information:", error));
   }, []);
 
   const handleDropdownChange = (event) => {
     const selectedColumn = event.target.value;
-    setInformation(info[selectedColumn] || "No information available for this selection.");
+    setInfo(information[selectedColumn] || "No information available for this selection.");
     // Fetch new forecast data based on selected column
     fetch(`http://localhost:5000/forecast?column=${encodeURIComponent(selectedColumn)}`)
       .then(response => response.json())
@@ -80,7 +75,7 @@ const App = () => {
 
         {/* Blob Box */}
         <div className="blob">
-          <span className="blob-text">{information}</span>
+          <span className="blob-text">{info}</span>
         </div>
       </div>
     </div>
