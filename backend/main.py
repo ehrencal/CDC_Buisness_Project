@@ -18,7 +18,7 @@ def home():
 def forcastYears():
     plots = []
     for i in range(11):
-        plots[i] = forcastRoute(column="Space economy1",length=10)
+        plots.append(forcastRoute(column="Space economy1",length=10))
     return plots
 
 def forcastRoute(column, length):

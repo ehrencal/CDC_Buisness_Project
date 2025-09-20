@@ -52,11 +52,11 @@ def forecast(df, column_name, forecast_steps=5, arima_order=(1, 1, 1)):
 
     # 7. Return forecast as JSON
     forecast_json = {
-        "dates": forecast.index.strftime('%Y-%m-%d').tolist(),
+        "dates": forecast.index.tolist(),
         "values": forecast.tolist()
     }
 
-    return jsonify({
+    return {
         "forecast": forecast_json,
         "plot_base64": encoded_plot
-    })
+    }
