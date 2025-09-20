@@ -6,12 +6,12 @@ import Graphs from "./components/Graphs.js";
 const App = () => {
   const [graphNumber, setGraphNumber] = useState(2);
   const [forecastData, setForecastData] = useState(null);
+  const [columns, setColumns] = useState([]); // <-- state for columns
 
   const parseForecastImage = (data, altText = "Forecast Plot") => {
     if (!data || !data.plot_base64) {
       return <p>No image available.</p>;
     }
-
     return (
       <img
         src={`data:image/png;base64,${data.plot_base64}`}
@@ -19,22 +19,20 @@ const App = () => {
         style={{ maxWidth: "100%", border: "1px solid #ccc", borderRadius: "8px" }}
       />
     );
-  }
-
-  const getColumns = () => {
-    let return_data;
-    fetch("http://localhost:5000/getColumns")
-      .then(response => response.json())
-      .then(data => return_data = data)
-      .catch(error => console.error("Error fetching columns:", error));
-    return return_data;
-  }
+  };
 
   useEffect(() => {
+    // Fetch forecast data
     fetch("http://localhost:5000/forecast")
       .then(response => response.json())
       .then(data => setForecastData(data))
       .catch(error => console.error("Error fetching data:", error));
+
+    // Fetch column names
+    fetch("http://localhost:5000/getColumns")
+      .then(response => response.json())
+      .then(data => setColumns(data))
+      .catch(error => console.error("Error fetching columns:", error));
   }, []);
 
   return (
@@ -48,17 +46,15 @@ const App = () => {
               : <p>Loading...</p>
           }
         />
-        <PredictInput 
-          setGraphNumber={setGraphNumber}
-        />
+        <PredictInput setGraphNumber={setGraphNumber} />
       </div>
 
       {/* Right side (Dropdown + Blob) */}
       <div className="right">
         {/* Dropdown */}
         <select className="dropdown">
-          {getColumns() && getColumns().map((col, index) => (
-            <option key={index} value={col}>{col}</option>
+          {columns.map((col, index) => (
+            <option key={index} value={col}>{col.trim()}</option>
           ))}
         </select>
 
@@ -69,6 +65,6 @@ const App = () => {
       </div>
     </div>
   );
-}
+};
 
 export default App;
