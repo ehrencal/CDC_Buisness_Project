@@ -32,7 +32,7 @@ def getColumns():
     return jsonify(dataframes.real_output_df.columns.tolist()[1:])
 
 def forcastRoute(column, length):
-    return forcasts.forecast(dataframes.real_output_df, column, length, (6,1,2))
+    return forcasts.forecast(dataframes.real_output_df, column, length, (6,1,1))
 
 if __name__ == '__main__':
     #serve(app, host='127.0.0.1', port=5000)

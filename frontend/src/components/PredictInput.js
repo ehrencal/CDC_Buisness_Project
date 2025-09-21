@@ -19,7 +19,7 @@ const PredictInput = ({ setGraphNumber }) => {
             max="7"
             step="1"
             value={predictValue}
-            className="input-box"
+            className="input-slider"
             onChange={handleSliderChange}
             />
         </div>
