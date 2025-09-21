@@ -35,16 +35,25 @@ def forecast(df, column_name, forecast_steps=5, arima_order=(1, 1, 1)):
     # 4. Smooth connection (prevent gap in plot)
     full_forecast = pd.concat([series[-1:], forecast])
 
-    # 5. Plot historical + forecast
+    # 5. Plot historical + forecast with custom background and legible text
     plt.figure(figsize=(10, 5))
-    series.plot(label='Historical')
-    full_forecast.plot(label='Forecast', style='--')
-    plt.title(f"{column_name} Forecast")
-    plt.legend()
-    plt.grid(True)
-    plt.xlabel("Time (Years)")
-    plt.ylabel("Millions of Dollars")
-    plt.xticks(ticks=range((2023-2012)+len(full_forecast)), labels=range(2012, 2023 + len(full_forecast)))
+    ax = plt.gca()
+    ax.set_facecolor('#f0f0f0')  # Light gray background for plot area
+    plt.gcf().set_facecolor('#1F1F1F')  # Slightly darker background for figure
+
+    series.plot(label='Historical', color='blue')
+    full_forecast.plot(label='Forecast', style='--', color='orange')
+    plt.title(f"{column_name} Forecast", color='#D8B4FE')
+    plt.legend(facecolor='white', edgecolor='black')
+    plt.grid(True, color='#cccccc')
+    plt.xlabel("Time (Years)", color='black')
+    plt.ylabel("Millions of Dollars", color='black')
+    plt.xticks(
+        ticks=range((2023-2012)+len(full_forecast)),
+        labels=range(2012, 2023 + len(full_forecast)),
+        color='#D8B4FE'
+    )
+    plt.yticks(color='#D8B4FE')
     
 
     # 6. Save plot as base64
