@@ -4,6 +4,8 @@ import PredictInput from "./components/PredictInput.js";
 import Graphs from "./components/Graphs.js";
 import information from "./imformation.json";
 
+const PORT = "3500";
+
 const App = () => {
   const [graphNumber, setGraphNumber] = useState(1);
   const [forecastData, setForecastData] = useState(null);
@@ -25,13 +27,13 @@ const App = () => {
 
   useEffect(() => {
     // Fetch forecast data
-    fetch("http://localhost:5000/forecast")
+    fetch(`http://localhost:${PORT}/forecast`)
       .then(response => response.json())
       .then(data => setForecastData(data))
       .catch(error => console.error("Error fetching data:", error));
 
     // Fetch column names
-    fetch("http://localhost:5000/getColumns")
+    fetch(`http://localhost:${PORT}/getColumns`)
       .then(response => response.json())
       .then(data => setColumns(data))
       .catch(error => console.error("Error fetching columns:", error));
@@ -41,44 +43,47 @@ const App = () => {
     const selectedColumn = event.target.value;
     setInfo(information[selectedColumn.trim()] || "No information available for this selection.");
     // Fetch new forecast data based on selected column
-    fetch(`http://localhost:5000/forecast?column=${encodeURIComponent(selectedColumn)}`)
+    fetch(`http://localhost:${PORT}/forecast?column=${encodeURIComponent(selectedColumn)}`)
       .then(response => response.json())
       .then(data => setForecastData(data))
       .catch(error => console.error("Error fetching data:", error));
   }
-
   return (
-    <div className="app">
-      {/* Left side (Graph + Predict) */}
-      <div className="left">
-        <Graphs
-          forecastImage={
-            Array.isArray(forecastData) && forecastData.length > graphNumber
-              ? parseForecastImage(forecastData[graphNumber])
-              : <p>Loading...</p>
-          }
-        />
-        <PredictInput setGraphNumber={setGraphNumber} />
+    <>
+      <div className="heading-container">
+        <h1 className="heading">AstroIntel Dashboard</h1>
       </div>
 
-      {/* Right side (Dropdown + Blob) */}
-      <div className="right">
-        {/* Dropdown */}
-        <select 
-          className="dropdown"
-          onChange={(e) => handleDropdownChange(e)}
-        >
-          {columns.map((col, index) => (
-            <option key={index} value={col}>{col.trim()}</option>
-          ))}
-        </select>
+      <div className="app">
+        {/* Left side (Graph + Predict) */}
+        <div className="left">
+          <Graphs
+            forecastImage={
+              Array.isArray(forecastData) && forecastData.length > graphNumber
+                ? parseForecastImage(forecastData[graphNumber])
+                : <p>Loading...</p>
+            }
+          />
+          <PredictInput setGraphNumber={setGraphNumber} />
+        </div>
 
-        {/* Blob Box */}
-        <div className="blob">
-          <span className="blob-text">{info}</span>
+        {/* Right side (Dropdown + Blob) */}
+        <div className="right">
+          <select 
+            className="dropdown"
+            onChange={(e) => handleDropdownChange(e)}
+          >
+            {columns.map((col, index) => (
+              <option key={index} value={col}>{col.trim()}</option>
+            ))}
+          </select>
+
+          <div className="blob">
+            <span className="blob-text">{info}</span>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
