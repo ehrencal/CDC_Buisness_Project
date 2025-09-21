@@ -46,8 +46,8 @@ def forecast(df, column_name, forecast_steps=5, arima_order=(1, 1, 1)):
     plt.title(f"{column_name} Forecast", color='#D8B4FE')
     plt.legend(facecolor='white', edgecolor='black')
     plt.grid(True, color='#cccccc')
-    plt.xlabel("Time (Years)", color='black')
-    plt.ylabel("Millions of Dollars", color='black')
+    plt.xlabel("Time (Years)", color='#D8B4FE')
+    plt.ylabel("Millions of Dollars", color='#D8B4FE')
     plt.xticks(
         ticks=range((2023-2012)+len(full_forecast)),
         labels=range(2012, 2023 + len(full_forecast)),
